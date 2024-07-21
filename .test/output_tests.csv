@@ -4,3 +4,4 @@
 # Match,"Test input line 1
 #Test input line 2","Test output line 1
 #Test output line 2",match
+Hello Test,"","Hello, GOALS in CS!",exact
