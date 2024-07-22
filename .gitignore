@@ -43,7 +43,10 @@ bin/
 .mtj.tmp/
 
 # Package Files #
+<<<<<<< HEAD
+=======
 *.jar
+>>>>>>> fab5231f09f4b1798d49e1ff12f80e545afbbabb
 *.war
 *.nar
 *.ear
@@ -55,3 +58,7 @@ bin/
 hs_err_pid*
 replay_pid*
 
+<<<<<<< HEAD
+!/.github/test/*.class
+=======
+>>>>>>> fab5231f09f4b1798d49e1ff12f80e545afbbabb

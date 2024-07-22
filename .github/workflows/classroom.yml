@@ -13,17 +13,17 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: Hello World
-      id: hello-world
+    - name: Lab Assignment
+      id: lab-assignment
       uses: classroom-resources/autograding-command-grader@v1
       with:
-        test-name: Hello World
+        test-name: Lab Assignment Tests
         setup-command: ''
-        command: "./test.sh"
+        command: "./.test/test.sh"
         timeout: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
-        HELLO-WORLD_RESULTS: "${{steps.hello-world.outputs.result}}"
+        LAB-ASSIGNMENT_RESULTS: "${{steps.lab-assignment.outputs.result}}"
       with:
-        runners: hello-world
+        runners: lab-assignment
